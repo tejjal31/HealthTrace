@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793293054923,
+      "tag": "0000_healthtrace_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793351622755,
+      "tag": "0001_womens_health",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793639399045,
+      "tag": "0002_health_logs",
+      "breakpoints": true
+    }
+  ]
+}

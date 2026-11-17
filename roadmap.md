@@ -1,0 +1,14 @@
+# HealthTrace roadmap
+- [x] Auth, profiles, storage, AI report reading
+- [x] Reports upload + scanning, detail with proof, EN/HI, PDF
+- [x] Dashboard, trends + compare, timeline search, symptom journal, profile
+- [x] Health Detective (results ↔ symptoms evidence graph)
+- [x] Women's Health: pink theme + heart cursor, period calendar, predictions w/ uncertainty, symptoms, PCOS education, hormone charts, illustrations, doctor summary
+- [x] Editable report date and removal of the missing/inconsistent-values block
+- [x] Health Journal (readings, charts, daily history) replacing Symptoms
+- [x] Ask About Tests (AI explainer) replacing Detective
+- [x] Other issue: custom name and optional reading shown in history; verified save, reload and removal
+- [x] Ask About Tests: reproduce failure and preserve the underlying credit/access error; regression tests passed
+- [x] Ask About Tests: built-in test library answers common tests when AI is unavailable
+- [x] Ask About Tests: no credit/technical messages shown to users; library expanded (hormones, electrolytes, liver, urine, infections); report-only fallback
+- [ ] Verify a successful real AI answer and AI report reading — blocked by insufficient AI credits (HTTP 402)
