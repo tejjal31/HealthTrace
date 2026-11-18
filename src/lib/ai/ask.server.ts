@@ -90,8 +90,3 @@ Do not return an empty explanation for a recognized medical term.
     throw new Error("AI could not complete this request. Please try again.");
   }
 }
-New Web Service
-Source Code
-Git Provider
-Public Git Repository
-Existing Image

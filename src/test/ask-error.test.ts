@@ -7,7 +7,7 @@ import { askAboutTest } from "@/lib/ai/ask.server";
 
 describe("Ask About Tests errors", () => {
   beforeEach(() => {
-    vi.stubEnv("LOVABLE_API_KEY", "test-only-key");
+    vi.stubEnv("GROQ_API_KEY", "test-only-key");
     mocks.streamText.mockReset();
   });
   it("shows the original credit error instead of the SDK no-output error", async () => {

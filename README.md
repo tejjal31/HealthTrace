@@ -1,26 +1,56 @@
-# Healthtrace Report Vault
 
-Implement exactly the screenshot and nothing else
+# HealthTrace – Medical Report Vault
 
-This project was built with [Lovable](https://lovable.dev).
+HealthTrace is a health record management application designed to help users securely store, organize, and understand their medical reports and health records.
 
-**Live app**: https://healthtrace-report-vault.lovable.app
+## Features
 
-## Build with Lovable
+- Secure user authentication
+- Upload and manage medical reports
+- Track lab test results and health trends
+- Maintain daily health and symptom records
+- AI-powered explanations of medical tests
+- Personal health dashboard
+- Women's health tracking
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/40a7593d-f3ea-4ef8-afab-0a06c88b74e8).
+## Technology Stack
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- React
+- TypeScript
+- TanStack Start
+- Supabase
+- Tailwind CSS
+- Groq AI
+- Vite
 
-## Development
+## Getting Started
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Install dependencies:
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+## Environment Variables
+
+Configure the required Supabase and Groq environment variables in your local `.env` file.
+
+Never commit API keys or secrets to GitHub.
+
+## Project
+
+**HealthTrace – Medical Report Vault**
+
+Developed as a health-tech software project.
