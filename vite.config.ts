@@ -1,3 +1,4 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
@@ -22,6 +23,11 @@ export default defineConfig({
     nitro({ preset: "node-server" }),
     react(),
   ],
+
+  ssr: {
+    external: ["pdfjs-dist"],
+  },
+
   resolve: {
     alias: {
       "@": `${process.cwd()}/src`,

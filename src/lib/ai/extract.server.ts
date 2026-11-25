@@ -2,7 +2,6 @@
 import { createOpenAI } from "@ai-sdk/openai";
 import { generateText, Output } from "ai";
 import { z } from "zod";
-import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 
 const MODEL = "qwen/qwen3.8-27b";
 
@@ -48,7 +47,13 @@ Rules:
   and return an empty tests array.
 `;
 
+
 async function extractPdfText(file: ArrayBuffer): Promise<string> {
+  // Load PDF.js at runtime so Nitro does not bundle away its worker file.
+  const { getDocument } = await import(
+    /* @vite-ignore */ "pdfjs-dist/legacy/build/pdf.mjs"
+  );
+
   const pdf = await getDocument({
     data: new Uint8Array(file),
   }).promise;
